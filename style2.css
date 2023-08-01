@@ -34,11 +34,6 @@ body h1{
     text-decoration: none; /* This will remove the underline usually associated with links */
     transition: background-color 0.3s ease;
 }
-body h1:hover {
-    background-color: white; /* This will change the background color of the h1 element on hover */
-    color: rgb(28,30,32);
-    border: 1px solid black;
-}
 body h2{
     font-family: 'CustomFontLight', fallback, sans-serif;
     color: white;
@@ -48,12 +43,17 @@ body h2{
 body p {
     font-family: 'CustomFontLight', fallback, sans-serif;
     color: white;
+    margin-bottom: 8%;
     margin-right: 0px;
     max-width: 800px;
 }
-
+hr {
+    margin: 100px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 figure img{
-    width: 80%; /* Image will take the full width of its parent container, 'figure' */
+    width: 100%; /* Image will take the full width of its parent container, 'figure' */
     height: auto;
 }
 
@@ -73,43 +73,6 @@ figure {
   
 .text-content {
     margin-left: 100px; /* Optional: add some space between the figure and the text */
-}
-
-hr {
-    margin: 100px 0;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-@keyframes blink {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-  
-#cursor {
-    animation: blink 1s infinite;
-}
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
-    gap: 200px; /* Creates some space between images */
-    max-width: 90%; /* Set max-width to prevent the layout from stretching too much on large screens */
-    margin: auto; /* Center the container */
-    margin-left: 8%; 
-    margin-right: 8%;
-}
-
-.image-grid img {
-    width: 100%; /* Images will take up the full width of their grid cell */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images cover the grid cell fully */
-}
-.bottom-content {
-    font-family: 'CustomFontMed', fallback, sans-serif;
-    color: white;
-    font-size: 56px;
-    margin-bottom: 500px;
-    margin-left: 10%;
 }
 
 .nav-menu {
@@ -135,51 +98,6 @@ hr {
     font-weight: bold;
     font-size: 20px;
     padding: 20px;
-}
-.image-grid {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.img-container {
-    position: relative;
-    width: calc(50% - 10px);
-    margin-bottom: 50px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-container img {
-    width: 700px;
-    height: 400px;
-}
-
-.img-title {
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-    font-size: 46px;
-    color: black;
-    background: white; /* Semi-transparent background */
-    padding: 5px;
-}
-
-.image-grid a {
-    transition: transform 0.3s ease;
-}
-
-.image-grid a:hover {
-    transform: scale(1.1);
-}
-
-.image-grid a .image-title {
-    transition: transform 0.3s ease;
-}
-
-.image-grid a:hover .image-title {
-    transform: translateY(-10px);
 }
 
 footer {
