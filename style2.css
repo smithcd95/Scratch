@@ -40,6 +40,24 @@ body h2{
     font-size: 26px;
     margin-bottom: 20px;
 }
+
+body h3{
+    font-family: 'CustomFontLight', fallback, sans-serif;
+    color: black;
+    background-color: yellow;
+    font-size: 26px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+body h4{
+    font-family: 'CustomFontLight', fallback, sans-serif;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 8%;
+    width: fit-content;
+}
+
 body p {
     font-family: 'CustomFontLight', fallback, sans-serif;
     color: white;
@@ -73,7 +91,41 @@ figure {
   
 .text-content {
     margin-left: 100px; /* Optional: add some space between the figure and the text */
+    line-height: 1.5;
 }
+
+.middle-figure img{
+    width: 100%; /* Image will take the full width of its parent container, 'figure' */
+    height: auto;
+    margin-left: 40px;
+}
+
+.middle-figure {
+    width: 30%; /* This will set the width of figure to 25% of the '.content' width */
+}
+
+.content2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center; /* This will vertically align the items if needed */
+    justify-content: flex-start; /* This will put space around the items */
+    
+    margin-left: 8%;
+  }
+  
+.text-content2 {
+    margin-left: 100px; /* Optional: add some space between the figure and the text */
+    max-width: 700px;
+}
+
+.middle-content {
+    width: 100%;
+    display: flex;
+    align-items: center; /* This will vertically align the items if needed */
+    flex-direction: row; /* This will reverse the order of the elements */
+}
+
 
 .nav-menu {
     position: absolute;
@@ -145,4 +197,9 @@ footer {
 
 .footer-content a:hover {
     color: #ddd; /* Change color on hover */
+}
+
+.highlight {
+    background-color: yellow; /* You can choose any color */
+    color: black; /* Optional: Set a text color that contrasts with the background */
 }
